@@ -16,22 +16,41 @@
 
 <!-- HEADER -->
 <header class="header">
-  <div class="brand">YUNA Ice Cream</div>
-  <nav id="navMenu">
-    <a href="#">Home</a>
+  <div class="header-left">
+    <div class="brand">YUNA Ice Cream</div>
+  </div>
+
+  <div class="box-nav">
+      <nav class="nav" id="navMenu">
+    <a href="index.html">Home</a>
     <a href="products.html">Products</a>
     <a href="b2b.html">B2B</a>
     <a href="contact.html">Contact</a>
   </nav>
 
-<div class="hamburger" id="hamburger">
-  <span></span>
-  <span></span>
-  <span></span>
+  <div class="header-right">
+   <div class="lang-box" id="langBox">
+  <span class="current-lang">UZ</span>
+  <svg width="12" height="12" viewBox="0 0 24 24">
+    <path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2"/>
+  </svg>
+
+  <div class="lang-dropdown">
+    <button data-lang="uz">UZ</button>
+    <button data-lang="ru">RU</button>
+    <button data-lang="en">EN</button>
+  </div>
 </div>
 
 
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+  </div>
 </header>
+
+
 
 
 
@@ -39,11 +58,11 @@
 <section class="hero">
   <div class="hero-text">
     <h1>O‘zbekistonning <span>N1</span> Muzqaymoq Zavodi</h1>
-    <p>21 yillik tajriba. Premium sifat. Tabiiy mahsulot.</p>
+    <p data-i18n="hero_desc">21 yillik tajriba. Premium sifat. Tabiiy mahsulot.</p>
 
     <div class="buttons">
-      <a class="btn primary" href="#">Buyurtma berish</a>
-      <a class="btn outline" href="#">Telegram</a>
+      <a class="btn primary" href="b2b.html" target="_blank">Buyurtma berish</a>
+      <a class="btn outline" href="https://t.me/yunamilk" target="_blank" rel="noopener">Telegram</a>
     </div>
   </div>
 
@@ -85,7 +104,7 @@
     <div class="footer-brand">
       <h2>YUNA Ice Cream</h2>
       <p>Premium Ice Cream Since 2005</p>
-      <span>O‘zbekistonning N1 muzqaymoq zavodi</span>
+      <span data-i18n="hero_title">O‘zbekistonning N1 muzqaymoq zavodi</span>
     </div>
 
     <div class="footer-links">
@@ -98,7 +117,7 @@
 
     <div class="footer-contact">
       <h4>Aloqa</h4>
-      <p>📞 +998 xx xxx xx xx</p>
+      <p>📞 +998 91 288 55 00</p>
       <p>📧 info@yunаicecream.com</p>
       <p>📍 Andijon, Asaka</p>
       <p>🕘 09:00 – 18:00</p>
@@ -106,8 +125,8 @@
 
     <div class="footer-social">
       <h4>Ijtimoiy</h4>
-      <a href="#">Instagram</a>
-      <a href="#">Telegram</a>
+      <a href="https://www.instagram.com/yunabiznes/" target="_blank" el="noopener">Instagram</a>
+      <a href="https://t.me/yunamilk" target="_blank" el="noopener">Telegram</a>
     </div>
 
   </div>
@@ -118,9 +137,9 @@
 </footer>
 
 
-
-
+<!-- <script src="assets/js/translations.js"></script> -->
 <script src="assets/js/main.js"></script>
+
 </body>
 </html>
 
